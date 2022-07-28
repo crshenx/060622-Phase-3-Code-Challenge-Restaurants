@@ -17,10 +17,9 @@ sporty_spice = Customer.create(first_name: "Melanie", last_name: "Chisholm")
 posh_spice = Customer.create(first_name: "Victoria", last_name: "Addams")
 
 puts "Creating reviews..."
-# ********************************************************************
-# * TODO: create reviews! Remember, a review belongs to a restaurant *
-# * and a review belongs to a customer.                              *
-# ********************************************************************
-# Create reviews Here
+Review.create(restaurant: shack, customer: baby_spice, star_rating: 3)
+Review.create(restaurant: bistro, customer: baby_spice, star_rating: 5)
+Review.create(restaurant: palace, customer: baby_spice, star_rating: 1)
+Review.create(restaurant: palace, customer: baby_spice, star_rating: 2)
 
 puts "Seeding done!"
